@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, verdana, geneva, tahoma, sans-serif;
+  font-size: 18px;
+  background-image: url(../img/plano-de-fundo-2.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+/* Aumentar o tamanho da imagem - Increase Image */
+.inImg{
+  width: 200px;
+}
+
+/* Mudar a cor para vermelho */
+.textRed{
+  color: #f83b3b;
+}
+
+
+header,
+footer,
+.animais {
+  width: 100%;
+  background: #f8f9fa;
+}
+
+.animais {
+  margin-bottom: 10px;
+}
+
+.image-rounded {
+  border-radius: 6px;
+}
+
+.clear {
+  clear: both;
+}
+
+.logotipo {
+  float: left;
+}
+
+.navbar {
+  margin-top: 35px;
+}
+
+.nav-item {
+  padding-left: 10px;
+}
+
+.navbar-toggler {
+  margin-left: 4px;
+}
+
+.registro {
+  margin-top: 45px;
+}
+
+.registro a {
+  padding: 5px;
+  text-decoration: none;
+  color: #f4aa24;
+}
+
+.registro a:hover {
+  color: #ffaf1b;
+  text-decoration: underline;
+}
+
+figure h1 {
+  float: right;
+  margin: 35px 0;
+}
+
+.banner {
+  max-width: 100%;
+  height: 450px;
+  background-image: url(../img/dog-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .texto {
+  width: 450px;
+  padding: 30px;
+  color: #fff;
+  text-align: justify;
+}
+
+.content {
+  background-color: #fff !important;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  
+}
+/* Para dar espaçamento entre o login-container e o content */
+.login-content{
+  width: auto;
+  height: 674px;
+}
+
+.login-container,
+.registrar-container{
+  width: 320px;
+  height: 420px;
+  background-color: #f69e02;
+  margin: 0 auto 254px auto;
+  border-radius: 60px 0 80px 0;
+  position: relative;
+  padding: 68px 28px;
+}
+
+.registrar-container{
+  height: 500px;
+}
+
+.pet-list {
+  margin: 10px 5px;
+  padding: 0 15px;
+}
+
+.pet-list a {
+  color: #2974ff;
+  text-decoration: none;
+}
+
+.pet-list a:hover {
+  text-decoration: underline;
+}
+
+.pet-list li {
+  max-width: 200px;
+  height: 320px;
+  margin: 10px 5px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.pet-list .info .name {
+  font-size: 16px;
+}
+
+.pet-list .info .state {
+  font-size: 13px;
+}
+
+.pet-list .info .genero {
+  width: 20px;
+}
+
+.pagination {
+  width: 300px;
+  padding-bottom: 10px;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+.image-rounded {
+  border-radius: 6px;
+}
+
+.image img {
+  max-width: 200px;
+  height: 200px;
+}
+
+.pet-list .info {
+  padding: 6px 10px 4px 10px;
+}
+
+.pet-list-title {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 44px;
+  color: #f4aa24;
+}
+
+.pet-list-description {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  padding: 5px 0;
+  color: #f69e02;
+}
+
+/* ----------------------- Como Ajudar ------------------------------ */
+.comoAjudar {
+  max-width: 1000px;
+  margin: 0 auto 16px auto;
+  padding: 10px 5px;
+  text-align: justify;
+}
+
+.comoAjudar .doar {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+/* ----------------------- Abrigos ------------------------------ */
+.abrigos::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.abrigos {
+  width: 100%;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.abrigo-lista {
+  width: 330px;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.abrigo-local ul {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.abrigos h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.abrigos .abrigo-item {
+  margin: 10px 0;
+}
+
+.abrigos .abrigo-link {
+  padding: 0;
+  color: #444;
+}
+
+/* ----------------------- Sobre ------------------------------ */
+
+.sobre {
+  max-width: 1000px;
+  margin: 0 auto 129px auto;
+  padding: 10px 5px;
+  text-align: justify;
+}
+
+/* ----------------------- Página de Adoção ------------------------------ */
+.adoption-container {
+  max-width: 1100px;
+  height: 400px;
+  margin: 0 auto 284px auto;
+  padding: 10px;
+  background-color: #ffaf1b;
+}
+
+.adoption-container .adoption-img {
+  width: 360px;
+  height: 320px;
+  margin-right: 10px;
+}
+
+.adoption-container .adoption-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.adoption-container .animal-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.adoption-container .adoption-adocao {
+  width: 100%;
+  height: 100%;
+}
+
+.adoption-adocao ul li{
+  list-style-type: disc;
+  padding: 3px 0;
+}
+
+@media (max-width:575.98px){
+  .pet-list li{
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+/* ---------------------------------------------- Login -------------------------------------------*/
+.usuario{
+  position: absolute;
+  top: -70px;
+  left: 27%;
+}
+
+.login-container h1,
+.registrar-container h1{
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 20px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+}
+
+.login-container p,
+.registrar-container p{
+  margin: 0;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+.login-container input,
+.registrar-container input{
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.login-container input[type="text"],
+.registrar-container input[type="text"],
+input[type="password"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+}
+
+.login-container input[type="submit"],
+.registrar-container input[type="submit"]{
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  height: 25px;
+  color: #000;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.login-container input[type="submit"]:hover,
+.registrar-container input[type="submit"]:hover{
+  cursor: pointer;
+  background:#000;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.login-container a,
+.registrar-container a{
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4b4b4b;
+  transition: 0.2s;
+}
+
+.login-container a:hover,
+.registrar-container a:hover{
+  transition: 0.2s;
+  color: #000;
+}
