@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -------------------------------------------- TOPO -------------------------------------------- */
+header .nav-link {
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header .nav-link:hover {
+  color: #fff !important;
+}
+
+header .border:hover {
+  transition: all 0.5s ease;
+  background: #414142;
+}
+
+nav .nav-link {
+  font-size: 20px;
+}
+
+nav .nav-link:hover {
+  padding: 2px 0;
+}
+
+/* -------------------------------------------- Carousel banner -------------------------------------------- */
+.carousel-Banner {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.carousel-control-prev {
+  padding: 0;
+  margin-top: 8px;
+  background: #000;
+  border-radius: 5px;
+}
+
+.carousel-control-next {
+  padding: 0;
+  margin-top: 8px;
+  background: #000;
+  border-radius: 5px;
+}
+
+/* -------------------------------------------- Produtos -------------------------------------------- */
+.verduras,
+.frutas {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #b82323;
+}
+
+.verduras h2,
+.frutas h2 {
+  padding: 10px;
+  color: #fff;
+}
+
+.prod-item {
+  padding: 0 20px;
+}
+
+.verduras-prod-item,
+.frutas-prod-item {
+  width: 230px;
+  padding: 10px;
+  /*background-color: #e9e9e9;*/
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 15px 20px;
+  float: left;
+}
+
+.produtos {
+  text-align: center;
+}
+
+.produtos-right {
+  width: 85%;
+  float: right;
+}
+
+.produtos-right .verduras-prod-item,
+.produtos-right .frutas-prod-item {
+  width: 193px;
+  float: left !important;
+}
+
+/* -------------------------------------------- Aside -------------------------------------------- */
+.barra-lateral {
+  float: left;
+  text-align: center;
+  width: 14%;
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* -------------------------------------------- Footer -------------------------------------------- */
+footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 13px;
+  font-weight: bold;
+  background: #b82323;
+  color: #fff;
+}
+
+/* --------------------------------------------  -------------------------------------------- */

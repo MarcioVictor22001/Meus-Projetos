@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Verdana, Arial, sans-serif;
+  font-size: 16px;
+  background: url(imagens/background.jpg) no-repeat;
+  background-size: cover;
+}
+
+/*-- Pré-Definições --*/
+ul {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+.text-2 {
+  font-size: 20px;
+}
+
+.text-5 {
+  font-size: 50px;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+/*-- Layout --*/
+header {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Barra de Navegação*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.navbar-bg {
+  background: #fff;
+}
+
+.mr-auto {
+  float: right;
+}
+
+.ml-auto {
+  float: left;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+}
+
+.navbar .nav-link:hover,
+.genero .nav-link:hover {
+  border-bottom: 2px solid #000;
+}
+
+/*-- Conteúdos --*/
+.conteudo-principal {
+  float: right;
+  width: 73%;
+  background: #f3f3f3;
+  font-family: "Roboto Mono";
+}
+
+.conteudo-lateral {
+  float: left;
+  width: 25%;
+  height: 100%;
+  background: #f3f3f3;
+  padding: 5px;
+  font-family: "Roboto Mono";
+  display: block;
+}
+
+.banner-principal {
+  width: 99%;
+  height: 350px;
+  margin: 0 auto;
+  padding: 5px 0;
+  position: relative;
+}
+
+.banner-principal h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.videos-principal,
+.desenhos-principal,
+.destaque,
+.donate,
+.jogos-principal {
+  text-align: center;
+}
+
+/*-- Conteudo Lateral --*/
+.card .title {
+  padding-top: 5px;
+}
+
+.card .title:hover {
+  text-decoration: underline;
+}
+
+.card img {
+  border-radius: 2px;
+}
+
+/*-- Footer --*/
+footer {
+  font-weight: bold;
+}
+
+/*----------------------------------------------- PÁGINA DESENHOS & VIDEOS -----------------------------------------------*/
+.conteudo-desenhos,
+.conteudo-videos {
+  width: 100%;
+  background: #f3f3f3;
+}
+.conteudo-desenhos img {
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.container {
+		width: 100%;
+	}
+
+	.conteudo-principal{
+		width: 100%;
+	}
+
+	.jogos-principal ul li, .desenhos-principal ul li, .conteudo-desenhos ul li, .navbar .nav-item{
+		display: block;
+	}
+
+	.conteudo-lateral{
+		display: none;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.container {
+		width: 100%;
+	}
+
+	.conteudo-principal, .desenhos-principal{
+		width: 100%;
+	}
+
+	.conteudo-lateral{
+		display: none;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.container {
+		width: 100%;
+	}
+	.destaque h1{
+		font-size: 35px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.container {
+		width: 100%;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.container {
+		max-width: 100%;
+	}
+}
