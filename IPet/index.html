@@ -1,337 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
-    />
-    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Ipet - INICIO</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="row">
-          <div class="col-md-5">
-            <figure>
-              <a href="#" class="logotipo"
-                ><img src="img/logo.jpeg" alt="logotipo" width="150"
-              /></a>
-              <h1>Adote um animal</h1>
-            </figure>
-          </div>
-          <div class="col-md-5">
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#menu"
-                aria-controls="menu"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a href="index.html" class="nav-link">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="abrigos.html" class="nav-link">Abrigos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="comoAjudar.html" class="nav-link">Como ajudar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="sobre.html" class="nav-link">Sobre</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-          <div class="col-md-2">
-            <div class="registro">
-              <a href="login.html" class="login">Login</a>
-              <a href="registrar.html" class="registro">Criar Conta</a>
-            </div>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IPet - Página Inicial</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="brand">
+            <img src="img/logo.jpeg" alt="Logo" width="200px">
+        </a>
+        <div class="area-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Abrigos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Como ajudar</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
         </div>
-      </header>
-      <div class="content">
-        <div class="banner">
-          <div class="texto">
-            <p>
-              Amar e respeitar os animais significa amar e respeitar <span class="textRed">todos os animais,</span>
-              não apenas aqueles que compartilhamos nosso lar.
-            </p>
-            <p>
-              Uma única doação poderá salvar a vida de 1 ou mais animais e vai também ajudar
-              os abrigos a se manterem firmes para que seja possivel resgatar mais animais 
-              abandonados.
-            </p>
-            <a href="#" class="btn btn-large btn-primary">Doar</a>
-          </div>
+        <div class="area-login">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="criarConta">Criar conta</a>
         </div>
+    </nav>
+
+    <div class="banner">
+        <div class="texto-banner">
+            <p>
+                Amar e respeitar os animais significa <span class="text-red">amar e respeitar todos os animais</span>, não apenas aqueles que compartilhamos nosso lar.
+
+                Uma única doação poderá salvar a vida de 1 ou mais animais e vai também ajudar os abrigos a se manterem firmes para que seja possivel resgatar mais animais abandonados.
+            </p>
+        </div>
+        <button type="button" class="doacao" onclick="doacao()">Fazer doação</button>
+    </div>
+
+    <div class="area-adocao">
+        <h1>Adote um Amigo</h1>
         <div class="animais">
-          <h1 class="pet-list-title text-center">Adote um amigo</h1>
-          <p class="pet-list-description text-center">
-            Não compre um animal ajude um a encontrar uma casa para viver
-          </p>
-          <ul class="pet-list">
-            <li>
-              <a href="adocao/pag-1.html">
-                <div class="image">
-                  <img src="img/dog.jpg" alt="Cachorro" class="image-rounded" />
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Juca</p>
-                  <p class="state">Curitiba / Parána</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="adocao/pag-2.html">
-                <div class="image">
-                  <img src="img/gato.jpg" alt="Gato" class="image-rounded" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Ellos</p>
-                  <p class="state">São Paulo / São Paulo</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog2.jpeg" alt="Cachorro" class="image-rounded" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Doguinho</p>
-                  <p class="state">São Paulo / São Paulo</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog3.jpeg" alt="Cachorro" class="image-rounded" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Enrique</p>
-                  <p class="state">São Paulo / São Paulo</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/gato2.jpeg" alt="Gato" class="image-rounded" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Miau</p>
-                  <p class="state">Rio de Janeiro / Niterói</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog4.jpeg" alt="Cachorro" class="image-rounded inImg" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Love</p>
-                  <p class="state">Rio de Janeiro / Niterói</p>
-                  <div class="details">
-                    <img src="img/g-feminino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog5.jpeg" alt="Gato" class="image-rounded inImg" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Thor</p>
-                  <p class="state">Rio de Janeiro / Niterói</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog6.jpeg" alt="Cachorro" class="image-rounded inImg" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Rodolfo</p>
-                  <p class="state">Curitiba / Parána</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero " />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/gato4.jpeg" alt="Gato" class="image-rounded" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Choke</p>
-                  <p class="state">São Paulo / São Paulo</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog7.jpeg" alt="Gato" class="image-rounded inImg" />
+            </a>
+            <a href="#" class="animal-box">
+                <div class="animalIMG">
+                    <img src="img/dog10.jpeg" alt="Animal para doacao" width="150">
                 </div>
-                <div class="info">
-                  <p class="name">Mailon</p>
-                  <p class="state">Rio de Janeiro / Niterói</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
+                <div class="animalInformation">
+                    <ul>
+                        <li>Nome</li>
+                        <li>Localização</li>
+                        <li>Sexo</li>
+                    </ul>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog8.jpeg" alt="Cachorro" class="image-rounded inImg" />
-                </div>
-                <div class="info">
-                  <p class="name">Hannah</p>
-                  <p class="state">Curitiba / Parána</p>
-                  <div class="details">
-                    <img src="img/g-feminino.png" alt="Male" class="genero" />
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog10.jpeg" alt="Gato" class="image-rounded" />
-                </div>
-                <div class="info">
-                  <p class="name">Kid</p>
-                  <p class="state">São Paulo / São Paulo</p>
-                  <div class="details">
-                    <img src="img/g-masculino.png" alt="Male" class="genero" />
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog11.jpeg" alt="Gato" class="image-rounded inImg" />
-                </div>
-                <div class="info">
-                  <p class="name">Estellar</p>
-                  <p class="state">Rio de Janeiro / Niterói</p>
-                  <div class="details">
-                    <img src="img/g-feminino.png" alt="Male" class="genero" />
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/dog12.jpeg" alt="Cachorro" class="image-rounded" />
-                </div>
-                <div class="info">
-                  <p class="name">Biba</p>
-                  <p class="state">Curitiba / Parána</p>
-                  <div class="details">
-                    <img src="img/g-feminino.png" alt="Female" class="genero" />
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="image">
-                  <img src="img/gatoFilhote.jpeg" alt="Gato filhotes" class="image-rounded inImg" />
-                </div>
-                <div class="info">
-                  <p class="name">Filhotes de Gato</p>
-                  <p class="state">Curitiba / Parána</p>
-                  <div class="details">
-                    <img src="img/g-feminino.png" alt="Male" class="genero" />
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="text-center">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-          </div>
+            </a>
         </div>
     </div>
+
     <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="">&copy; 2020 - IPet - 'Adote um amigo para vida toda'</p>
-          </div>
-          <div class="col-md-6">
-            <p>Não temos abrigos e não resgatamos animais</p>
-          </div>
-        </div>
-      </div>
+        &copy; IPet - 'Adote um amigo para vida toda'
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
-  </body>
+    
+
+    <script>
+        function doacao(){
+            let valorDoacao = prompt('Valor: ');
+            if(isNaN(valorDoacao)){
+                alert('Digite um valor válido!!');
+                return;
+            }else{
+                alert('Obrigado pela Doação :)');
+            }
+        }
+    </script>
+</body>
 </html>
