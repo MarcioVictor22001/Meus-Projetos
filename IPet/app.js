@@ -1,13 +1,9 @@
-let animais = ['Boi','Vaca','Porco','Cachorro','Cavalo'];
-
-let fazenda1 = ['Boi', 'Vaca'];
-
-for(let boi in fazenda1){
-    boi = fazenda1[boi];
-    console.log(boi)
-    if(boi.valueOf() == 'Boi' && boi == 'Vaca'){
-        console.log('OK');
+function doacao(){
+    let valorDoacao = prompt('Valor: ');
+    if(isNaN(valorDoacao)){
+        alert('Digite um valor válido!!');
+        return;
     }else{
-        console.log('Animal não encontrado')
+        alert('Obrigado pela Doação :)');
     }
 }
