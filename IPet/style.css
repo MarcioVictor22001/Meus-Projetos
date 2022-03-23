@@ -169,8 +169,42 @@ footer{
 }
 
 
+@media (max-width: 1070px) and (min-width: 320px){
+
+    .brand, .area-menu, .area-login{
+        display: block;
+        width: 100%;
+        margin: 12px auto;
+        text-align: center;
+    }
+
+    .area-menu ul{
+        justify-content: space-evenly;
+    }
+
+    .brand img{
+        width: 220px;
+        height: 200px;
+    }
+
+    .texto-banner{
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .animais{
+        justify-content: center;
+    }
+
+    
+}
+
 @media (max-width: 1373px) and (min-width: 760px){
     .animal-box{
-        margin: 10px 1.5px;
+        margin: 10px auto;
+    }
+
+    .animais{
+        justify-content: center;
     }
 }
