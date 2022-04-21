@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    border: 1px solid #000;
+    height: 30px;
+    padding: 5px;
+}
+
+.icon{
+    cursor: pointer;
+    background-color: #721717;
+    color: #fff;
+    font-size: 16px;
+    padding: 7px 20px;
+}
+
+.icon:hover{
+    background-color: #5f0a0a;
+}
+
+.brand{
+    font-size: 3em;
+    color: #000;
+}
+
+/* -------- MODS --------- */
+.mods{
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.mod-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.title-mods{
+    font-size: 2.5em;
+    color: #721717;
+    display: block;
+}
+
+.mod-box{
+    width: 330px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: auto;
+}
+
+.mod-image img{
+    width: 100%;
+}
+
+.link-text-mod{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #113495;
+}
+
+.mod-box h5{
+    margin:10px 0;
+    color: #848484;
+}
+
+.mod-box p{
+    font-size: 1.1em;
+    color: #353535;
+}
+
+
+@media (max-width: 1980px) and (min-width: 1350px){
+    .mod-box{
+        width: 30%;
+    }
+}
+
+@media (max-width: 1349px){
+    .mod-box{
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px){
+    .container, .mods{
+        width: 100%;
+    }
+
+    .mod-box{
+        width: 48%;
+        margin: 25px auto;
+    }
+
+    .mod-box:last-child{
+        margin-left: 5.5px;
+    }
+
+    .featured-posts, .search-box{
+        display: none;
+    }
+    
+    .brand, .title-mods{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px){
+    .container, .mods{
+        width: 100%;
+    }
+
+
+    .mod-box{
+        border-top: 2px solid gray;
+        padding-top: 10px;
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .featured-posts{
+        display: none;
+    }
+    
+}
+
+
+/* -------- FEATURED POSTS --------- */
+
+.featured-posts{
+    width: 20%;
+    height: 100%;
+    margin-top: 20px;
+    background-color: #353535;
+}
+
+.featured-title{
+    background-color: #1845c2;
+    color: #fff;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.featured-item {
+    list-style: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.featured-item a:hover{
+    text-decoration: underline;
+}
+
+.featured-item a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+

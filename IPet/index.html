@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>IPet - Página Inicial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <nav class="navbar">
         <a href="index.html" class="brand">
             <img src="img/logo.jpeg" alt="Logo" width="200px">
         </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         <div class="area-menu">
-            <ul>
+            <ul id='dropdown'>
                 <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Abrigos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Como ajudar</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
             </ul>
         </div>
-        <div class="area-login">
+        <div class="area-login" id="areaLogin">
             <a href="#" class="login">Login</a>
             <a href="#" class="criarConta">Criar conta</a>
         </div>
