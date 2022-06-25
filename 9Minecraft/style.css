@@ -99,6 +99,14 @@ header .container{
     color: #353535;
 }
 
+/* ---------- FOOTER ---------------- */
+footer{
+    width: 70%;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
 
 @media (max-width: 1980px) and (min-width: 1350px){
     .mod-box{
@@ -109,6 +117,14 @@ header .container{
 @media (max-width: 1349px){
     .mod-box{
         width: 30%;
+    }
+
+    .mods{
+        width: 100%;
+    }
+
+    .featured-posts{
+        display: none;
     }
 }
 
