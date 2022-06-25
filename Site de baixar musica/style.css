@@ -35,7 +35,7 @@ header{
     height: 140px;
 }
 
-#myLinks{
+#menu{
     display: block;
 }
 
@@ -180,7 +180,7 @@ footer{
         flex-direction: column;
         height: auto;
     }
-    #myLinks{
+    #menu{
         display: none;
     }
 
@@ -194,14 +194,17 @@ footer{
         font-size: 15px;
     }
 
+    .topo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
     .topo .icon{
         display: block;
         color: #fff;
-        position: absolute;
-        right: 0;
-        top: 0;
         padding: 10px;
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .block-info{
@@ -219,35 +222,39 @@ footer{
     header{
         display: flex;
         flex-direction: column;
-        height: auto;
-    }
-
-    .topo{
-        display: block;
+        padding: 0;
+        margin: 0;
         width: 100%;
-        text-align: center;
+        height: 100%;
     }
+ 
 
-    #myLinks{
+    #menu{
         display: none;
     }
 
     .nav-item{
         display: block;
-        padding: 10px 10px;
-        margin-bottom:30px;
         height: 25px;
     }
     .nav-link{
+        display: block;
         font-size: 15px;
+        padding: 10px;
+    }
+
+    .topo{
+        display: block;
+        width: 100%;
+        margin-bottom: 45px;
+        text-align: center;
     }
 
     .topo .icon{
         display: block;
         color: #fff;
-        text-align: center;
         padding: 10px;
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .container, .search-container .input-lg{
