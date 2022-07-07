@@ -6,15 +6,26 @@ toggle.addEventListener('click', function(){
 })
 
 // Scroll
-document.addEventListener('DOMContentLoaded', function () {
-    let btnLeft = document.querySelector('#btnLeft');
-    let btnRight = document.querySelector('#btnRight');
+let btnLeft = document.querySelectorAll('.btnLeft');
+let btnRight = document.querySelectorAll('.btnRight');
 
-    btnLeft.onclick = function () {
-        document.querySelector('.poster-container').scrollLeft +=250;
-    };
+let posterItem = document.querySelectorAll('.poster-container');
 
-    btnRight.onclick = function () {
-        document.querySelector('.poster-container').scrollLeft -= 250;
-    };
-}, false);
+
+//poster 1
+btnLeft[0].onclick = function(){
+    posterItem[0].scrollLeft += 250;
+}
+
+btnRight[0].onclick = function(){
+    posterItem[0].scrollLeft -= 250;
+}
+
+//poster 2 
+btnLeft[1].onclick = function(){
+    posterItem[1].scrollLeft += 250;
+}
+
+btnRight[1].onclick = function(){
+    posterItem[1].scrollLeft -= 250;
+}

@@ -207,14 +207,17 @@ body{
     color: #000;
 }
 
-#btnLeft, #btnRight{
+.btnLeft, .btnRight{
     border: none;
     cursor: pointer;
     float: right;
+    margin: 0 1px;
+    padding: 10px;
+    background: none;
 }
 
-#btnLeft img, #btnRight img{
-    width: 16px;
+.btnLeft img, .btnRight img{
+    width: 20px;
 }
 
 .poster-container{
