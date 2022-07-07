@@ -35,12 +35,17 @@ header{
     height: 140px;
 }
 
-#menu{
+#myLinks{
     display: block;
 }
 
-.topo .icon{
+.mobile-btn-menu{
     display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .nav-item {
@@ -172,16 +177,84 @@ footer{
     font-size: 1.1em;
 }
 
-@media (min-width: 840px) and (max-width: 1255px)
-{
-
+@media (min-width: 840px) and (max-width: 1255px){
+    .brand{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
     header{
         display: flex;
         flex-direction: column;
         height: auto;
+        position: relative;
     }
-    #menu{
+
+    .nav-item{
+        display: block;
+        padding: 10px 10px;
+        margin-bottom:30px;
+        height: 25px;
+    }
+
+    .nav-link{
+        font-size: 15px;
+    }
+
+    .mobile-btn-menu{
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 4.8em;
+    }
+
+    .block-info{
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    .resources{
+        margin-top: 30px;
+    }
+
+    .topo{
         display: none;
+    }
+
+    .active{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 839px){
+    .brand{
+        display: block;
+        width: auto;
+        height: 140px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .brand img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .topo{
+        display: none;
+    }
+    .active{
+        display: block;
+        width: 100%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
     }
 
     .nav-item{
@@ -194,67 +267,12 @@ footer{
         font-size: 15px;
     }
 
-    .topo{
+    .mobile-btn-menu{
         display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .topo .icon{
-        display: block;
+        position: absolute;
+        top: 4.8em;
         color: #fff;
-        padding: 10px;
-        font-size: 40px;
-    }
-
-    .block-info{
-        width: 45%;
-        margin-top: 10px;
-    }
-
-    .resources{
-        margin-top: 30px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 839px){
-
-    header{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    }
- 
-
-    #menu{
-        display: none;
-    }
-
-    .nav-item{
-        display: block;
-        height: 25px;
-    }
-    .nav-link{
-        display: block;
-        font-size: 15px;
-        padding: 10px;
-    }
-
-    .topo{
-        display: block;
-        width: 100%;
-        margin-bottom: 45px;
         text-align: center;
-    }
-
-    .topo .icon{
-        display: block;
-        color: #fff;
-        padding: 10px;
-        font-size: 40px;
     }
 
     .container, .search-container .input-lg{

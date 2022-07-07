@@ -1,10 +1,6 @@
-function myFunction(event) {
-    let menu = document.getElementById("menu");
+let toggle = document.querySelector('.mobile-btn-menu');
+const navTop  = document.querySelector('.topo');
 
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-      event.preventDefault();
-    }else{
-      menu.style.display = "block";
-    }
-  }
+toggle.addEventListener('click', function(){
+    navTop.classList.toggle("active");
+})
