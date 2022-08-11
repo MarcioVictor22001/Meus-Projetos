@@ -11,7 +11,6 @@ let btnRight = document.querySelectorAll('.btnRight');
 
 let posterItem = document.querySelectorAll('.poster-container');
 
-
 //poster 1
 btnLeft[0].onclick = function(){
     posterItem[0].scrollLeft += 250;
@@ -20,12 +19,11 @@ btnLeft[0].onclick = function(){
 btnRight[0].onclick = function(){
     posterItem[0].scrollLeft -= 250;
 }
-
 //poster 2 
 btnLeft[1].onclick = function(){
-    posterItem[1].scrollLeft += 250;
+        posterItem[1].scrollLeft += 250;
 }
 
 btnRight[1].onclick = function(){
-    posterItem[1].scrollLeft -= 250;
+        posterItem[1].scrollLeft -= 250;
 }
