@@ -6,24 +6,23 @@ toggle.addEventListener('click', function(){
 })
 
 // Scroll
-let btnLeft = document.querySelectorAll('.btnLeft');
-let btnRight = document.querySelectorAll('.btnRight');
+    let btnLeft = document.getElementsByClassName('btnLeft');
+    let btnRight = document.getElementsByClassName('btnRight');
 
-let posterItem = document.querySelectorAll('.poster-container');
+    let posterItem = document.getElementsByClassName('poster-container');
+    
+    for( let i = 0; i < btnLeft.length; i++){
+        btnLeft[i].addEventListener('click', function(event){
+            for(let x = 0; x < posterItem.length; x++){
+                posterItem[i].scrollLeft += 250;
+            }
+        })
+    }
 
-//poster 1
-btnLeft[0].onclick = function(){
-    posterItem[0].scrollLeft += 250;
-}
-
-btnRight[0].onclick = function(){
-    posterItem[0].scrollLeft -= 250;
-}
-//poster 2 
-btnLeft[1].onclick = function(){
-        posterItem[1].scrollLeft += 250;
-}
-
-btnRight[1].onclick = function(){
-        posterItem[1].scrollLeft -= 250;
-}
+    for( let i = 0; i < btnRight.length; i++){
+        btnRight[i].addEventListener('click', function(event){
+            for(let x = 0; x < posterItem.length; x++){
+                posterItem[i].scrollLeft -= 250;
+            }
+        })
+    }
