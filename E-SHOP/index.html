@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>E-SHOP - Página inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'/>
 </head>
 <body>
     <header>
         <div class="logo"><span class="c-pink">E</span>-SHOP</div>
+        <button class="openNav">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <nav class="navbar">
-            <ul>
+            <button class="closeNav">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="nav-links">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
@@ -179,5 +186,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
