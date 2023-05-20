@@ -1,28 +1,26 @@
-let toggle = document.getElementById('mobile-btn-menu');
-const navTop  = document.querySelector('.header-main-nav');
+let toggle = document.getElementById("mobile-btn-menu");
+const navTop = document.querySelector(".header-main-nav");
 
-toggle.addEventListener('click', function(){
-    navTop.classList.toggle("active");
-})
+toggle.addEventListener("click", function () {
+  navTop.classList.toggle("active");
+});
 
 // Scroll
-    let btnLeft = document.getElementsByClassName('btnLeft');
-    let btnRight = document.getElementsByClassName('btnRight');
+let btnLeft = document.querySelectorAll(".btnLeft");
+let btnRight = document.querySelectorAll(".btnRight");
 
-    let posterItem = document.getElementsByClassName('poster-container');
-    
-    for( let i = 0; i < btnLeft.length; i++){
-        btnLeft[i].addEventListener('click', function(event){
-            for(let x = 0; x < posterItem.length; x++){
-                posterItem[i].scrollLeft += 250;
-            }
-        })
-    }
+let posterItem = document.querySelectorAll(".poster-container");
 
-    for( let i = 0; i < btnRight.length; i++){
-        btnRight[i].addEventListener('click', function(event){
-            for(let x = 0; x < posterItem.length; x++){
-                posterItem[i].scrollLeft -= 250;
-            }
-        })
-    }
+btnLeft.forEach(function (btn, index) {
+  btn.addEventListener("click", (event) => {
+    let posterContainer = posterItem[index];
+    posterContainer.scrollLeft += 250;
+  });
+});
+
+btnRight.forEach(function (btn, index) {
+  btn.addEventListener("click", (event) => {
+    let posterContainer = posterItem[index];
+    posterContainer.scrollLeft -= 250;
+  });
+});
