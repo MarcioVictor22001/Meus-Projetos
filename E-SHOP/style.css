@@ -1,4 +1,6 @@
-*{
+*,
+::after,
+::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +11,7 @@ header{
     margin: 20px auto;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 main{
@@ -24,6 +27,25 @@ main{
 
 .c-pink{
     color: #f31cd6;
+}
+
+.openNav{
+    background: none;
+    border: none;
+    font-size: 1.6em;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.closeNav{
+    background: none;
+    border: none;
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
 }
 
 .navbar{
@@ -338,8 +360,65 @@ ul li{
 
 @media screen and (max-width: 760px){
     header,main{
-        width: 95%;
+        width: 100%;
         flex-direction: column;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: all 0.5s ease-in-out;
+        
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .nav-links{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .navbar .nav-item{
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-link{
+        width: 100%;
+        display: block;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .nav-link:hover{
+        background: none;
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .closeNav {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+
+    .openNav, .closeNav{
+        display: block;
+    }
+
+    .navbar.active{
+        right: 0;
     }
 
     .footer-container{
@@ -360,17 +439,18 @@ ul li{
         display: block;
     }
 
-    .navbar{
-        width: 100%;
-        justify-content: center;
-        margin-top: 15px;
+    .item-container{
+        width: 90%;
+        margin: 0 auto;
     }
 
     .item-box{
         width: 49%;
     }
 
-
+    .banner-information{
+        width: 95%;
+    }
 
     .banner-sell .info-left{
         width: 100%;
@@ -385,6 +465,19 @@ ul li{
 @media screen and (max-width: 600px){
     header,main{
         width: 100%;
+    }
+
+    .banner-information{
+        width: 95%;
+    }
+
+    .banner-information .info-left .info{
+        width: 100%;
+    }
+
+    .banner-information .info-left .info h2{
+        text-align: center;
+        font-size: 2em;
     }
 
     .item-container{
