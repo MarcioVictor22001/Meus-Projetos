@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+a{
+      text-decoration: none;
+}
+
+ul{
+      list-style: none;
+}
+
+body{
+      background-color: #d12626;
+      font-family: 'Poppins', sans-serif;
+}
+
+.container{
+      max-width: 1320px;
+      height: auto;
+      margin: 0 auto;
+}
+
+header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      padding: 1rem 3rem;
+      position: relative;
+}
+
+header::after{
+      content: '';
+      position: absolute;
+      top: 110px;
+      left: 0;
+      width: 100%;
+      border-bottom: 2px solid #fff;
+      opacity: 0.4;
+}
+
+.brand{
+      font-family: 'Permanent Marker', cursive;
+      font-size: 3rem;
+      font-weight: 600;
+      color: #fff;
+      transform: rotate(-10deg);
+}
+.navbar{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.nav-menu{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+}
+
+.navbar .nav-link{
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      position: relative;
+}
+
+.navbar .nav-link:hover::after{
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 0;
+      border-bottom: 2px solid #fff;
+      animation: border 0.5s both;
+}
+
+
+.cart{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+}
+
+.cart .contact-number{
+      display: flex;
+      flex-direction: column;
+}
+
+.cart .contact-number h3{
+      font-size: 1rem;
+      align-self: flex-end;
+      line-height: 10px;
+}
+
+.cart .contact-number h3 span{
+      color: #ff9d1e;
+}
+
+.cart .contact-number p.number{
+      font-size: 1.7rem;
+      font-weight: 500;
+}
+
+.cart .delivery-cart{
+      width: 128px;
+      padding: 1rem 1.2rem;
+      background-color: #6ec419;
+      border-radius: 1.9rem;
+}
+
+.cart .delivery-cart:hover{
+      background-color: #77d41a;
+}
+
+.cart .delivery-cart .delivery{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5px;
+      color: #fff;
+      position: relative;
+}
+
+
+.cart .delivery-cart .delivery::after{
+      content: '';
+      position: absolute;
+      top: 32px;
+      right: 0;
+      width: 90%;
+      border-bottom: 2px solid #fff;
+}
+
+
+
+
+.cart .delivery-cart .delivery span{
+      font-size: 2rem;
+}
+
+.cart .delivery-cart .delivery h3{
+      font-size: 1rem;
+}
+
+.cart .delivery-cart .delivery h3.addNumber{    
+      margin: 0 auto;
+      font-size: 1.5rem;
+}
+
+main{
+      margin: 50px 50px;
+      padding: 1rem 0;
+      background: #fff;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+}
+
+.pizza-card{
+      max-width: 350px;
+      height: auto;
+      border: 1px solid #adadad;
+      text-align: center;
+}
+
+.pizza-card-img{
+      width: 170px;
+      height: 180px;
+      padding: 20px 0;
+      margin: 0 auto;
+}
+
+.pizza-card-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+}
+
+.pizza-card-info{
+      padding: 0 20px;
+}
+
+.pizza-card-info .card-title{
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+}
+
+.pizza-card-info .card-text{
+      font-size: 1rem;
+      padding: 10px 0 20px 0;
+}
+
+.pizza-card-info .pizzaSize{
+      padding: 5px 10px;
+      font-size: 1.1rem;
+}
+
+
+.pizza-card .pizzaValue_buy{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+
+}
+
+.pizza-card .pizzaValue_buy .pizzaValue_buyInfo{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+}
+
+.pizza-card-info .pizzaValue_buy .pizzaValue_buyInfo span{
+      color: #6ec419;
+      font-size: 2.5rem;
+}
+
+.pizza-card-info .pizzaValue_buy .pizzaValue_buyInfo .pizza_moneyValue{
+      font-size: 1.5rem;
+}
+
+.pizza-card-info .pizzaValue_buy .btnBuyPizza{
+      color: #fff;
+      padding: 0.5rem 2rem;
+      background-color: #6ec419;
+      border-radius: 1.9rem;
+      font-weight: 500;
+      border: none;
+}
+
+.pizza-card-info .pizzaValue_buy .btnBuyPizza:hover{
+      background-color: #77d41a;
+}
+
+
+
+.menu{
+      display: none;
+      cursor: pointer;
+}
+
+.menu span{
+      
+      font-size: 2rem;
+}
+
+
+@keyframes border{
+      0%{
+            width: 0px;
+      }
+      
+      100%{
+            width: 70%;
+      }
+}
+
+@keyframes border-sm-size{
+      0%{
+            width: 0px;
+      }
+      
+      100%{
+            width: 100%;
+      }
+}
+
+@media (max-width: 1100px){
+
+      .cart .contact-number{
+            display: none;
+      }
+}
+
+
+@media (max-width: 780px) {
+
+      header{
+            padding: 1rem;
+      }
+
+      .menu {
+            display: block;
+      }
+
+      .nav-menu {
+            position: fixed;
+            right: -100%;
+            top: 110px;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: -10px;
+            padding-top: 80px;
+            transition: 0.3s;
+            background-color: #d12626;
+            z-index: 1;
+      }
+
+      .nav-menu.ativo {
+            right: 0;
+      }
+
+      .navbar .nav-link{
+            font-size: 2rem;
+      }
+
+      .navbar .nav-link:hover::after{
+            top: 40px;
+            
+      animation: border-sm-size 0.5s both;
+      }
+
+
+      .cart .delivery-cart{
+            width: 100px;
+      }
+
+      .cart .delivery-cart .delivery{
+            justify-content: center;
+      }
+      
+
+      .cart .delivery-cart .delivery span{
+            display: none;
+      }
+
+      .cart .delivery-cart .delivery h3.addNumber{    
+            font-size: 1rem;
+      }
+
+      .container{
+            max-width: 100%;
+      }
+
+      main{
+            margin: 50px 3% 2% 3%;
+      }
+      
+}
+
+@media (max-width: 500px){
+      .brand{
+            font-size: 2rem;
+      }
+}
