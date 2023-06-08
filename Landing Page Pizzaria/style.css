@@ -153,14 +153,16 @@ header::after{
 }
 
 main{
-      margin: 50px 50px;
+      max-width: 100%;
+      margin: 50px 10px;
       padding: 1rem 0;
       background: #fff;
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+      grid-template-columns: repeat(auto-fit,minmax(300px, auto));
       gap: 20px;
       align-items: center;
       justify-content: center;
+      border-radius: 5px;
 }
 
 .pizza-card{
@@ -250,6 +252,15 @@ main{
 .menu span{
       
       font-size: 2rem;
+}
+
+footer{
+      width: auto;
+      text-align: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      
+      border-radius: 5px 5px 0 0;
 }
 
 
@@ -349,6 +360,9 @@ main{
 }
 
 @media (max-width: 500px){
+      main{
+            margin: auto 0;
+      }
       .brand{
             font-size: 2rem;
       }
