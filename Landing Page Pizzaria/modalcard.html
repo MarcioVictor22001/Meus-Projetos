@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+      <link rel="stylesheet" href="style.css">
+
+      <style>
+            * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+            }
+
+            body {
+                  background-color: #fff;
+            }
+
+            .modal {
+                  width: 300px;
+                  height: 350px;
+                  border: 1px solid #000;
+                  border-radius: 5px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-around;
+                  background-color: #d12626;
+
+                  position: absolute;
+                  top: 10%;
+                  left: 40%;
+                  margin:  0;
+
+                  
+            }
+
+            .modal.active{
+                  display: none;
+            }
+
+            .close-modal{
+                  background: none;
+                  border: none;
+                  color: #fff;
+                  width: 100%;
+                  height: 100%;
+                  position: relative;
+            }
+
+            .close-modal span{
+                  font-size: 2rem;
+                  position: absolute;
+                  top: 0;
+                  left: 10px;
+
+            }
+
+            
+
+            .modal-image {
+                  max-width: 100%;
+                  height: 200px;
+                  padding-bottom: 10px;
+            }
+
+            img {
+                  width: 100%;
+                  height: 100%;
+            }
+
+            .modal-info{
+                  border-top: 1px solid #fff;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  background-color: #fff;
+                  padding: 0 1rem;
+
+            }
+
+            .card-title{
+                  margin: 10px 0;
+            }
+
+            .pizzaValue_buy {
+                  
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-bottom: 10px;
+
+            }
+
+            .pizzaValue_buy .pizzaValue_buyInfo {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 5px;
+            }
+
+            .pizzaValue_buy .pizzaValue_buyInfo span {
+                  color: #6ec419;
+                  font-size: 2.5rem;
+            }
+
+            .pizzaValue_buy .pizzaValue_buyInfo .pizza_moneyValue {
+                  font-size: 1.5rem;
+            }
+
+            .pizzaValue_buy .btnBuyPizza {
+                  color: #fff;
+                  padding: 0.5rem 2rem;
+                  background-color: #6ec419;
+                  border-radius: 1.9rem;
+                  font-weight: 500;
+                  border: none;
+            }
+
+            .pizzaValue_buy .btnBuyPizza:hover {
+                  background-color: #77d41a;
+            }
+      </style>
+
+</head>
+
+<body>
+
+      <div class="container-modal">
+            <div class="modal">
+                  <button class="close-modal">
+                        <span class="material-icons">
+                              close
+                              </span>
+                  </button>
+                  <div class="modal-image">
+                        <img src="images/pizza_calabresa.png" alt="">
+                  </div>
+                  <div class="modal-info">
+                        <h1 class="card-title">Calabresa</h1>
+
+                        <div class="pizzaValue_buy">
+                              <div class="pizzaValue_buyInfo">
+                                    <span class="material-icons">
+                                          paid
+                                    </span>
+                                    <h3 class="pizza_moneyValue">50</h3>
+                              </div>
+
+                              <button type="button" class="btnBuyPizza">Add to Cart</button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script src="dist/modalCard.js"></script>
+</body>
+
+</html>

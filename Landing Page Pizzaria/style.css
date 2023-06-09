@@ -173,10 +173,30 @@ main{
 }
 
 .pizza-card-img{
-      width: 170px;
+      width: 100%;
       height: 180px;
       padding: 20px 0;
       margin: 0 auto;
+      position: relative;
+      cursor: pointer;
+}
+
+.pizza-card-img:hover span.hover-add{
+      display: block;
+}
+
+
+.pizza-card-img:hover{
+      background-color: #ff9d1e;
+      opacity: 0.9;
+}
+span.hover-add{
+      position: absolute;
+      top: 38%;
+      left: 43%;
+      color: #6ec419;
+      font-size: 3rem;
+      display: none;
 }
 
 .pizza-card-img img{

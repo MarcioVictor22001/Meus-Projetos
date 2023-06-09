@@ -1,26 +1,28 @@
 import saboresPizza from "./saboresPizza.js";
+import renderModal from "./modalCard.js";
 
-export default function renderPizzaCards(){
 
-  const menu = document.querySelector('.menu span');
-  const navMenu = document.querySelector('.nav-menu');
+export default function renderPizzaCards() {
+  const menu = document.querySelector(".menu span");
+  const navMenu = document.querySelector(".nav-menu");
   const menuPizza = document.querySelector(".menu-pizza");
   const deliveryCart = document.querySelector(".delivery-cart");
   let cartCount = 0;
   const cartValue = document.querySelector(".cartNumber");
 
   window.addEventListener("load", () => {
-    criarCards();
+    
+    pizzaCards();
     addItemToCart();
   });
 
-  menu.addEventListener('click', ()=>{
-    navMenu.classList.toggle('ativo')
-  })
+  menu.addEventListener("click", () => {
+    navMenu.classList.toggle("ativo");
+  });
 
   deliveryCart.addEventListener("click", clearCart);
 
-  function criarCards() {
+ function pizzaCards() {
     saboresPizza.forEach((sabor) => {
       const pizzaCard = document.createElement("div");
 
@@ -28,26 +30,27 @@ export default function renderPizzaCards(){
 
       pizzaCard.innerHTML = `
           <div class="pizza-card-img">
+          <span class="material-icons hover-add">add</span>
           <img src="${sabor.img}" alt="${sabor.nome}">
           </div>
           <div class="pizza-card-info">
-              <h1 class="card-title">${sabor.nome}</h1>
-              <div class="pizza-sizes">
-                    <select name="pizza-Size" class="pizzaSize" onChange="selectOptions(this)">
-                          <option selected>Tamanho</option>
-                          <option value="small">Small</option>
+          <h1 class="card-title">${sabor.nome}</h1>
+          <div class="pizza-sizes">
+          <select name="pizza-Size" class="pizzaSize" onChange="selectOptions(this)">
+          <option selected>Tamanho</option>
+          <option value="small">Small</option>
                           <option value="medium">Medium</option>
                           <option value="big">Big</option>
-                    </select>
-              </div>
-
-              <div class="pizzaValue_buy">
+                          </select>
+                          </div>
+                          
+                          <div class="pizzaValue_buy">
                     <div class="pizzaValue_buyInfo">
                           <span class="material-icons">
                                 paid
-                          </span>
-                          <h3 class="pizza_moneyValue">${sabor.valor}</h3>
-                    </div>
+                                </span>
+                                <h3 class="pizza_moneyValue">${sabor.valor}</h3>
+                                </div>
               
                     <button type="button" class="btnBuyPizza">Add to Cart</button>
               </div>
@@ -55,8 +58,13 @@ export default function renderPizzaCards(){
           `;
 
       menuPizza.appendChild(pizzaCard);
+      
     });
+    renderModal(saboresPizza)
   }
+
+  
+  
 
   function addItemToCart() {
     clearCart();
@@ -73,9 +81,8 @@ export default function renderPizzaCards(){
   }
 
   function clearCart() {
-    cartValue.textContent = 'Empty';
+    cartValue.textContent = "Empty";
     cartValue.classList.remove("addNumber");
-    cartCount=0;
+    cartCount = 0;
   }
-
 }
